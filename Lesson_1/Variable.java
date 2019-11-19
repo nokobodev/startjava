@@ -1,7 +1,6 @@
 public class Variable {
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 		byte numberOfLocalDrives = 2; 
 		short geforceModel = 920;
 		int cpu	= 5200;

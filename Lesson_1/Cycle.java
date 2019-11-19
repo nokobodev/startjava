@@ -9,7 +9,7 @@ public class Cycle {
 		int i = 6;
 		while(i >= -6) {
 			System.out.println(i);
-			i = i - 2;
+			i -= 2;
 		}
 		System.out.println();
 
@@ -17,7 +17,7 @@ public class Cycle {
 		int j = 10;
 		do {
 			if(j % 2 != 0) {
-				sum = sum + j;
+				sum += j;
 			}			
 			j++;
 		} while(j <= 20);

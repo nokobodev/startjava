@@ -7,22 +7,24 @@ public class Person {
 	int age = 41;
 
 	void walk() {
-
+		System.out.println("I'm walking.");
 	}
 
 	void sit() {
-
+		System.out.println("I'm sittiing.");
 	}
 
 	void run() {
-
+		System.out.println("I'm running.");
 	}
 
-	void speak() {
-
+	String speak() {
+		String somePhrase = "Bla-bla-bla";
+		System.out.println(somePhrase);
+		return somePhrase;
 	}
 
 	void learnJava() {
-
+		System.out.println("I'm learning Java.");
 	}
 }

@@ -2,24 +2,24 @@ public class Calculator {
 	
 	public static void main(String[] args) {
 		int firstNumber = 2;
-		char mathSign = '^';
+		char mathOperator = '^';
 		int secondNumber = 5;
 						
-		if (mathSign == '+') {
+		if (mathOperator == '+') {
 			System.out.println(firstNumber + secondNumber);
-		} else if (mathSign == '-') {
+		} else if (mathOperator == '-') {
 			System.out.println(firstNumber - secondNumber);
-		} else if (mathSign == '*') {
+		} else if (mathOperator == '*') {
 			System.out.println(firstNumber * secondNumber);
-		} else if (mathSign == '/') {
+		} else if (mathOperator == '/') {
 			System.out.println(firstNumber / secondNumber);
-		} else if (mathSign == '^') {
-			int productOfNumbers = firstNumber;
-			for (int i = 1; i < secondNumber; i++) {
-				productOfNumbers *= firstNumber; 
+		} else if (mathOperator == '^') {
+			int result = 1;
+			for (int i = 0; i < secondNumber; i++) {
+				result *= firstNumber; 
 			}
-			System.out.println(productOfNumbers);
-		} else if (mathSign == '%') {
+			System.out.println(result);
+		} else if (mathOperator == '%') {
 			System.out.println(firstNumber % secondNumber);
 		} else {
 			System.out.println("Wrong math sign!");

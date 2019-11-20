@@ -5,21 +5,21 @@ public class Calculator {
 		char mathSign = '^';
 		int secondNumber = 5;
 						
-		if(mathSign == '+') {
+		if (mathSign == '+') {
 			System.out.println(firstNumber + secondNumber);
-		} else if(mathSign == '-') {
+		} else if (mathSign == '-') {
 			System.out.println(firstNumber - secondNumber);
-		} else if(mathSign == '*') {
+		} else if (mathSign == '*') {
 			System.out.println(firstNumber * secondNumber);
-		} else if(mathSign == '/') {
+		} else if (mathSign == '/') {
 			System.out.println(firstNumber / secondNumber);
-		} else if(mathSign == '^') {
-			int sum = firstNumber;
+		} else if (mathSign == '^') {
+			int productOfNumbers = firstNumber;
 			for (int i = 1; i < secondNumber; i++) {
-				sum *= firstNumber; 
+				productOfNumbers *= firstNumber; 
 			}
-			System.out.println(sum);
-		} else if(mathSign == '%') {
+			System.out.println(productOfNumbers);
+		} else if (mathSign == '%') {
 			System.out.println(firstNumber % secondNumber);
 		} else {
 			System.out.println("Wrong math sign!");

@@ -1,13 +1,24 @@
 public class Jaeger {
-	
-	private String modelName;
-	private String mark;
-	private String origin;
-	private float height;
-	private float weight;
-	private int speed;
-	private int strength;
-	private int armor;
+
+    private String modelName;
+    private String mark;
+    private String origin;
+    private float height;
+    private float weight;
+    private int speed;
+    private int strength;
+    private int armor;
+
+    public Jaeger(String modelName, String mark, String origin, float height, float weight, int speed, int strength, int armor) {
+        this.modelName = modelName;
+        this.mark = mark;
+        this.origin = origin;
+        this.height = height;
+        this.weight = weight;
+        this.speed = speed;
+        this.strength = strength;
+        this.armor = armor;
+    }
 
     public String getModelName() {
         return modelName;
@@ -73,21 +84,21 @@ public class Jaeger {
         this.armor = armor;
     }
 
-	public boolean drift() {
-		System.out.println("You entered the drift.");
-		return true;
-	}
+    public boolean drift() {
+        System.out.println("You entered the drift.");
+        return true;
+    }
 
-	public void move() {
-		System.out.println("You walked 5 steps.");
-	}
+    public void move() {
+        System.out.println("You walked 5 steps.");
+    }
 
-	public String scanKaiju() {
+    public String scanKaiju() {
         System.out.println("You are scanning Kaiju!");
-		return "Nothing";
-	}
+        return "Nothing";
+    }
 
-	public void useVortexCannon() {
-		System.out.println("You destroyed the enemy!");
-	}
+    public void useVortexCannon() {
+        System.out.println("You destroyed the enemy!");
+    }
 }
